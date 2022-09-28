@@ -8,6 +8,7 @@ URL:      https://www.steinberg.net/en/company/developers.html
 Source0:  https://github.com/steinbergmedia/vst3sdk/archive/refs/heads/%{name}-%{version}.tar.gz
 
 BuildRequires: cmake
+BuildRequires: pkgconfig(freetype2)
 BuildRequires: pkgconfig(x11)
 
 %description
