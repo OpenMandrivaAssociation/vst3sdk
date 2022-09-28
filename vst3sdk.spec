@@ -9,6 +9,7 @@ Source0:  https://github.com/steinbergmedia/vst3sdk/archive/refs/heads/%{name}-%
 
 BuildRequires: cmake
 BuildRequires: pkgconfig(freetype2)
+BuildRequires: pkgconfig(xcb-cursor)
 BuildRequires: pkgconfig(xcb-util)
 BuildRequires: pkgconfig(x11)
 
