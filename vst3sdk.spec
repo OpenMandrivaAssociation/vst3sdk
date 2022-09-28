@@ -23,6 +23,8 @@ BuildRequires: pkgconfig(xcb-util)
 BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xkbcommon)
 BuildRequires: pkgconfig(xkbcommon-x11)
+BuildRequires: stdc++-devel
+BuildRequires: stdc++-static-devel
 
 %description
 This package provides the 'base', 'pluginterfaces' and 'public.sdk' source modules only, necessary for Steinberg VST3 Plug-in and Host application.
