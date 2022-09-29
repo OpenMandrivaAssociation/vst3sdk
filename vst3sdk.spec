@@ -6,8 +6,10 @@ Summary:	VST 3 Plug-in SDK
 URL:      https://www.steinberg.net/en/company/developers.html
 # Use git clone --recursive to pull also all needed submodules. Source archive from release/tag not contains submodules.
 Source0:  https://github.com/steinbergmedia/vst3sdk/archive/refs/heads/%{name}-%{version}.tar.gz
+Patch0:		vst3sdk-buildfix.patch
 
 BuildRequires: cmake
+BuildRequires: ninja
 BuildRequires: pkgconfig(cairo)
 BuildRequires: pkgconfig(fontconfig)
 BuildRequires: pkgconfig(freetype2)
@@ -31,14 +33,13 @@ This package provides the 'base', 'pluginterfaces' and 'public.sdk' source modul
 
 %prep
 %autosetup -p1
+%cmake \
+	-G Ninja
 
 %build
-%cmake
-  
-%make_build
-  
+%ninja_build -C build
+
 %install
-%make_install -C build
-  
-  
+%ninja_install -C build
+
 %files
