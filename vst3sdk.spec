@@ -25,6 +25,7 @@ BuildRequires: pkgconfig(xcb-util)
 BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xkbcommon)
 BuildRequires: pkgconfig(xkbcommon-x11)
+BuildRequires: atomic-devel
 BuildRequires: stdc++-devel
 BuildRequires: stdc++-static-devel
 
