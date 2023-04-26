@@ -1,5 +1,5 @@
 Name:     vst3sdk
-Version:	3.7.6
+Version:	3.7.7
 Release:	1
 License:	GPL-3.0
 Summary:	VST 3 Plug-in SDK
