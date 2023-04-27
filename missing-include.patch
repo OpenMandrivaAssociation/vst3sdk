@@ -1,0 +1,11 @@
+diff -uraN vst3sdk-3.7.7/public.sdk/source/vst/moduleinfo/moduleinfoparser.cpp omv-vst3sdk-3.7.7/public.sdk/source/vst/moduleinfo/moduleinfoparser.cpp
+--- vst3sdk-3.7.7/public.sdk/source/vst/moduleinfo/moduleinfoparser.cpp	2023-04-26 15:42:11.000000000 +0200
++++ omv-vst3sdk-3.7.7/public.sdk/source/vst/moduleinfo/moduleinfoparser.cpp	2023-04-27 13:50:09.527848257 +0200
+@@ -39,6 +39,7 @@
+ #include "jsoncxx.h"
+ #include "pluginterfaces/base/ipluginbase.h"
+ #include <stdexcept>
++#include <limits>
+ 
+ //------------------------------------------------------------------------
+ namespace Steinberg::ModuleInfoLib {
