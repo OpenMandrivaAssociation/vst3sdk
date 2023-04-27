@@ -7,6 +7,7 @@ URL:      https://www.steinberg.net/en/company/developers.html
 # Use git clone --recursive to pull also all needed submodules. Source archive from release/tag not contains submodules.
 Source0:  https://github.com/steinbergmedia/vst3sdk/archive/refs/heads/%{name}-%{version}.tar.gz
 Patch0:		vst3sdk-buildfix.patch
+Patch1:		missing-include.patch
 
 BuildRequires: cmake
 BuildRequires: ninja
