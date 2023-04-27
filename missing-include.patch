@@ -1,3 +1,14 @@
+diff -uraN vst3sdk-3.7.7/public.sdk/source/vst/moduleinfo/moduleinfo.h omv-vst3sdk-3.7.7/public.sdk/source/vst/moduleinfo/moduleinfo.h
+--- vst3sdk-3.7.7/public.sdk/source/vst/moduleinfo/moduleinfo.h	2023-04-26 15:42:11.000000000 +0200
++++ omv-vst3sdk-3.7.7/public.sdk/source/vst/moduleinfo/moduleinfo.h	2023-04-27 14:02:56.810481048 +0200
+@@ -39,6 +39,7 @@
+ 
+ #include <string>
+ #include <vector>
++#include <stdint.h>
+ 
+ //------------------------------------------------------------------------
+ namespace Steinberg {
 diff -uraN vst3sdk-3.7.7/public.sdk/source/vst/moduleinfo/moduleinfoparser.cpp omv-vst3sdk-3.7.7/public.sdk/source/vst/moduleinfo/moduleinfoparser.cpp
 --- vst3sdk-3.7.7/public.sdk/source/vst/moduleinfo/moduleinfoparser.cpp	2023-04-26 15:42:11.000000000 +0200
 +++ omv-vst3sdk-3.7.7/public.sdk/source/vst/moduleinfo/moduleinfoparser.cpp	2023-04-27 13:50:09.527848257 +0200
