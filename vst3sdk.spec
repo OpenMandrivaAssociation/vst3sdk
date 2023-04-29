@@ -1,3 +1,5 @@
+%define _empty_manifest_terminate_build 0
+
 Name:     vst3sdk
 Version:	3.7.7
 Release:	1
