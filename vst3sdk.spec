@@ -58,3 +58,6 @@ sed -i "s|VERSION|%{version}|" %{buildroot}%{_libdir}/pkgconfig/vst3sdk.pc
 
 
 %files
+%{_libdir}/pkgconfig/vst3sdk.pc
+%{_datadir}/cmake/vst3sdk/
+%{_datadir}/vst3sdk/
