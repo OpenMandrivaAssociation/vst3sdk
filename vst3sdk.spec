@@ -35,8 +35,17 @@ cp -a base pluginterfaces public.sdk %{buildroot}%{_datadir}/%{name}/
 install -D -m0644 %{SOURCE3} %{buildroot}%{_libdir}/pkgconfig/vst3sdk.pc
 sed -i "s|VERSION|%{version}|" %{buildroot}%{_libdir}/pkgconfig/vst3sdk.pc
 
+# %doc and %license keep only the basename, so the three trees cannot share README.md / LICENSE.txt.
+mkdir -p doc lic
+cp base/README.md doc/base-README.md
+cp pluginterfaces/README.md doc/pluginterfaces-README.md
+cp public.sdk/README.md doc/public.sdk-README.md
+cp base/LICENSE.txt lic/base-LICENSE.txt
+cp pluginterfaces/LICENSE.txt lic/pluginterfaces-LICENSE.txt
+cp public.sdk/LICENSE.txt lic/public.sdk-LICENSE.txt
+
 %files
-%license base/LICENSE.txt pluginterfaces/LICENSE.txt public.sdk/LICENSE.txt
-%doc base/README.md pluginterfaces/README.md public.sdk/README.md
+%license lic/base-LICENSE.txt lic/pluginterfaces-LICENSE.txt lic/public.sdk-LICENSE.txt
+%doc doc/base-README.md doc/pluginterfaces-README.md doc/public.sdk-README.md
 %{_libdir}/pkgconfig/vst3sdk.pc
 %{_datadir}/vst3sdk/
